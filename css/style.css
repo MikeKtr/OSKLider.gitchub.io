@@ -1,0 +1,242 @@
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.header img {
+  width: 60px;
+  margin: 0 10px;
+}
+
+.header > button {
+  background-color: white;
+  border: none;
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 23px;
+  animation: phaseout 0.5s;
+  animation-fill-mode: both;
+}
+
+.header > button:hover {
+  animation: phasein 0.5s;
+  animation-fill-mode: both;
+}
+
+.main {
+  width: 100%;
+  height: 600px;
+  background-image: url("/OSK_main2.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main button {
+  border: none;
+  width: 200px;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 20px;
+  animation: phaseout2 0.5s;
+  animation-fill-mode: both;
+}
+.main button:hover {
+  animation: phasein2 0.5s;
+  animation-fill-mode: both;
+}
+
+.kurs {
+  background-color: s;
+  width: 100%;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.kurs h1 {
+  font-size: 30px;
+  margin-top: 0px;
+}
+.kurs hr {
+  background-color: black;
+  width: 80%;
+  height: 3px;
+  margin-bottom: 30px;
+}
+.kurs p {
+  font-weight: bold;
+  margin: 0;
+}
+
+.onas {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.onas div {
+  width: 50%;
+  height: 600px;
+  flex: 0 0 50%;
+}
+.onas div:nth-child(2),
+.onas div:nth-child(3) {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.onas div:nth-child(2) h1,
+.onas div:nth-child(3) h1 {
+  font-size: 40px;
+}
+.onas div:nth-child(2) hr,
+.onas div:nth-child(3) hr {
+  background-color: black;
+  width: 60%;
+  height: 3px;
+}
+.onas div:nth-child(2) p,
+.onas div:nth-child(3) p {
+  font-weight: bold;
+  width: 80%;
+}
+.onas #photo1,
+.onas #photo2 {
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.onas #photo1 {
+  background-image: url("/img1.jpg");
+}
+.onas #photo2 {
+  background-image: url("/img3.jpg");
+}
+
+.opinie {
+  width: 100%;
+  height: 600px;
+  background-image: url("/OSK_main2.jpg");
+  background-color: #cccccc;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  overflow: hidden;
+}
+.opinie h1 {
+  color: white;
+  font-size: 40px;
+  margin-top: 100px;
+}
+.opinie .fb-posts {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  animation-name: opinie;
+  animation-duration: 100s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+.opinie iframe {
+  width: 500px;
+  flex: 0 0 600px;
+  padding: 10px;
+  border-radius: 20px;
+  overflow: scroll;
+}
+
+.footer {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+  color: #333;
+}
+.footer .kontakt {
+  width: 60%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@keyframes opinie {
+  from {
+    transform: translate(2200px);
+  }
+  to {
+    transform: translate(-2200px);
+  }
+}
+@keyframes phasein {
+  from {
+    background-color: white;
+  }
+  to {
+    background-color: #afafaf;
+  }
+}
+@keyframes phaseout {
+  from {
+    background-color: #afafaf;
+  }
+  to {
+    background-color: white;
+  }
+}
+@keyframes phasein2 {
+  from {
+    background-color: #333;
+  }
+  to {
+    background-color: white;
+    color: black;
+  }
+}
+@keyframes phaseout2 {
+  from {
+    background-color: white;
+    color: black;
+  }
+  to {
+    color: white;
+    background-color: #333;
+  }
+}/*# sourceMappingURL=style.css.map */
